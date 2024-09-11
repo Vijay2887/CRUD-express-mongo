@@ -1,34 +1,34 @@
-User Management API
+# User Management API
 
-Table of Contents
+## Table of Contents
 
-1. #overview
-    - 1.1 #project-description
-    - 1.2 #features
-2. #getting-started
-    - 2.1 #installation
-    - 2.2 #running-the-server
-3. #api-endpoints
-    - 3.1 #create-user
-    - 3.2 #get-all-users
-    - 3.3 #get-single-user
-    - 3.4 #update-user
-    - 3.5 #delete-user
-4. #usage
-    - 4.1 #testing-the-endpoints
-5. #notes
-    - 5.1 #password-hashing
-    - 5.2 #error-handling
-6. #contributing
-7. #author
+1. [Overview](#overview)
+    - 1.1 [Project Description](#project-description)
+    - 1.2 [Features](#features)
+2. [Getting Started](#getting-started)
+    - 2.1 [Installation](#installation)
+    - 2.2 [Running the Server](#running-the-server)
+3. [API Endpoints](#api-endpoints)
+    - 3.1 [Create User](#create-user)
+    - 3.2 [Get All Users](#get-all-users)
+    - 3.3 [Get Single User](#get-single-user)
+    - 3.4 [Update User](#update-user)
+    - 3.5 [Delete User](#delete-user)
+4. [Usage](#usage)
+    - 4.1 [Testing the Endpoints](#testing-the-endpoints)
+5. [Notes](#notes)
+    - 5.1 [Password Hashing](#password-hashing)
+    - 5.2 [Error Handling](#error-handling)
+6. [Contributing](#contributing)
+7. [Author](#author)
 
-Overview
+## Overview
 
-Project Description
+### Project Description
 
 This is a simple user management API built with Express.js and MongoDB. It allows you to perform CRUD (Create, Read, Update, Delete) operations on users.
 
-Features
+### Features
 
 - Create a new user with a hashed password
 - Get all users (excluding passwords)
@@ -36,62 +36,61 @@ Features
 - Update a user by email
 - Delete a user by email
 
-Getting Started
+## Getting Started
 
-Installation
+### Installation
 
 1. Clone the repository
-2. Install dependencies with npm install
+2. Install dependencies with `npm install`
 
-Running the Server
+### Running the Server
 
-1. Start the server with npm start
+1. Start the server with `npm start`
 
-API Endpoints
+## API Endpoints
 
-Create User
+### Create User
 
-- POST /api/users: Create a new user
+- `POST /api/users`: Create a new user
 
-Get All Users
+### Get All Users
 
-- GET /api/users: Get all users
+- `GET /api/users`: Get all users
 
-Get Single User
+### Get Single User
 
-- GET /api/users/:email: Get a single user by email
+- `GET /api/users/:email`: Get a single user by email
 
-Update User
+### Update User
 
-- PUT /api/users/:email: Update a user by email
+- `PUT /api/users/:email`: Update a user by email
 
-Delete User
+### Delete User
 
-- DELETE /api/users/:email: Delete a user by email
+- `DELETE /api/users/:email`: Delete a user by email
 
-Usage
+## Usage
 
-Testing the Endpoints
+### Testing the Endpoints
 
 1. Use a tool like Postman or cURL to test the endpoints
 
-Notes
+## Notes
 
-Password Hashing
+### Password Hashing
 
-- Passwords are hashed using the hashPassword function from ../utils/hashPasswords.mjs
+- Passwords are hashed using the `hashPassword` function from `../utils/hashPasswords.mjs`
 
-Error Handling
+### Error Handling
 
 - Error handling is basic and returns a 400 status code for most errors
 
-Contributing
+## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
 
-Author
+## Author
 
 - Name: [Pulipati Vijaya Simha]
 - Email: [pulipativijayasimha@gmail.com]
-- GitHub: (https://github.com/Vijay2887)
-
+- GitHub: [(https://github.com/Vijay2887)]
